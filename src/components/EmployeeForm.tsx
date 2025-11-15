@@ -39,7 +39,7 @@ export function EmployeeForm({ onSave, initialData, onCancel }: EmployeeFormProp
   const onSubmit = async (data: EmployeeFormData) => {
     try {
       // 🔹 POST to backend API
-      const response = await fetch("http://localhost:5000/employees", {
+      const response = await fetch("https://employee-backend-theta.vercel.app/employees", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
