@@ -34,7 +34,7 @@ export const ViewPage: FC<ViewPageProps> = ({ employee, onBack }) => {
   const handleSave = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/employees/${formData._id}`,
+        `https://employee-backend-theta.vercel.app/employees/${formData._id}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
