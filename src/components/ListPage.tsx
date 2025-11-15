@@ -36,7 +36,7 @@ export function ListPage({ onAdd, onView, onDelete, onBulkDelete }: ListPageProp
   const [employees, setEmployees] = useState<Employee[]>([]);
   const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
   const [showDeleteDialog, setShowDeleteDialog] = useState(false);
-  const API_URL = "http://localhost:5000/employees";
+  const API_URL = "https://employee-backend-theta.vercel.app/employees";
 
   // ───────────────────────────────
   // FETCH EMPLOYEES ON PAGE LOAD
